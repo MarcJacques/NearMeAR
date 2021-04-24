@@ -12,6 +12,8 @@
 		0555B79F2634988D00FA6DEC /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 0555B79E2634988D00FA6DEC /* Experience.rcproject */; };
 		0555B7A12634988E00FA6DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0555B7A02634988E00FA6DEC /* Assets.xcassets */; };
 		0555B7A42634988E00FA6DEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0555B7A32634988E00FA6DEC /* Preview Assets.xcassets */; };
+		0555B7AE26349AFE00FA6DEC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555B7AD26349AFE00FA6DEC /* LocationManager.swift */; };
+		0555B7B326349F8C00FA6DEC /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555B7B226349F8C00FA6DEC /* ARViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0555B7A02634988E00FA6DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0555B7A32634988E00FA6DEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0555B7A52634988E00FA6DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0555B7AD26349AFE00FA6DEC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0555B7B226349F8C00FA6DEC /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		0555B7992634988D00FA6DEC /* NearMeAR */ = {
 			isa = PBXGroup;
 			children = (
+				0555B7B126349F7100FA6DEC /* Views */,
+				0555B7AC26349AE300FA6DEC /* Manager */,
 				0555B79A2634988D00FA6DEC /* AppDelegate.swift */,
 				0555B79C2634988D00FA6DEC /* ContentView.swift */,
 				0555B79E2634988D00FA6DEC /* Experience.rcproject */,
@@ -70,6 +76,22 @@
 				0555B7A32634988E00FA6DEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0555B7AC26349AE300FA6DEC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0555B7AD26349AFE00FA6DEC /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0555B7B126349F7100FA6DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0555B7B226349F8C00FA6DEC /* ARViewContainer.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0555B7B326349F8C00FA6DEC /* ARViewContainer.swift in Sources */,
+				0555B7AE26349AFE00FA6DEC /* LocationManager.swift in Sources */,
 				0555B79D2634988D00FA6DEC /* ContentView.swift in Sources */,
 				0555B79B2634988D00FA6DEC /* AppDelegate.swift in Sources */,
 				0555B79F2634988D00FA6DEC /* Experience.rcproject in Sources */,

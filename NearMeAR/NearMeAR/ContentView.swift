@@ -6,32 +6,24 @@
 //
 
 import SwiftUI
-import RealityKit
+import MapKit
 
 struct ContentView : View {
+    @ObservedObject var locationManager = LocationManager()
+  
+    
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        
+        ZStack(alignment: .top) {
+            
+            ARViewContainer()
+            
+            Text("\(locationManager.locationString) ")
+                .font(.largeTitle)
+                .foregroundColor(Color.white)
+        }
+        .edgesIgnoringSafeArea(.all)
     }
-}
-
-struct ARViewContainer: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        return arView
-        
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    
 }
 
 #if DEBUG
