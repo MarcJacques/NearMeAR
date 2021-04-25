@@ -17,12 +17,14 @@ struct ContentView : View {
         ZStack(alignment: .top) {
             
             ARViewContainer()
+                .edgesIgnoringSafeArea(.all)
             
-            Text("\(locationManager.locationString) ")
-                .font(.largeTitle)
-                .foregroundColor(Color.white)
+            SearchButtonBar()
+            
+//            Text("\(locationManager.locationString) ")
+//                .font(.largeTitle)
+//                .foregroundColor(Color.white)
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

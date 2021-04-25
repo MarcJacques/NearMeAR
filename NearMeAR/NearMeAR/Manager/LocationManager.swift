@@ -31,8 +31,6 @@ class LocationManager: NSObject, ObservableObject {
         
         self.deviceOrientation()
     }
-    
-    
 }
 
 
@@ -102,6 +100,31 @@ extension LocationManager: CLLocationManagerDelegate {
             // No location was available.
             completionHandler(nil)
         }
+    }
+    
+}
+
+extension LocationManager {
+    
+    func findPOI(searchTerm: String) -> [POI] {
+        var POIArray: [POI] = []
+        let request = MKLocalSearch.Request()
+        
+        request.naturalLanguageQuery = searchTerm
+        
+        let search = MKLocalSearch(request: request)
+        search.start { (response, error) in
+            if let response = response {
+                
+                let mapItems = response.mapItems
+                POIArray = mapItems.map {
+                    POI(currentLocation: self.currentLocation ?? CLLocation(), placemark: $0.placemark)
+                }
+                
+            }
+            
+        }
+        return POIArray
     }
     
 }
