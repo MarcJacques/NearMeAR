@@ -16,6 +16,8 @@
 		0555B7B326349F8C00FA6DEC /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555B7B226349F8C00FA6DEC /* ARViewContainer.swift */; };
 		0555B7B82634B1E000FA6DEC /* SearchButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555B7B72634B1E000FA6DEC /* SearchButtonBar.swift */; };
 		0555B7BD2634C67D00FA6DEC /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0555B7BC2634C67D00FA6DEC /* POI.swift */; };
+		055DD25026361873002BAE84 /* POIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DD24F26361873002BAE84 /* POIController.swift */; };
+		055DD25326365959002BAE84 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DD25226365959002BAE84 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		0555B7B226349F8C00FA6DEC /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		0555B7B72634B1E000FA6DEC /* SearchButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButtonBar.swift; sourceTree = "<group>"; };
 		0555B7BC2634C67D00FA6DEC /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
+		055DD24F26361873002BAE84 /* POIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIController.swift; sourceTree = "<group>"; };
+		055DD25226365959002BAE84 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				0555B7AD26349AFE00FA6DEC /* LocationManager.swift */,
+				055DD24F26361873002BAE84 /* POIController.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0555B7BC2634C67D00FA6DEC /* POI.swift */,
+				055DD25226365959002BAE84 /* Place.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,9 +185,11 @@
 			files = (
 				0555B7BD2634C67D00FA6DEC /* POI.swift in Sources */,
 				0555B7B326349F8C00FA6DEC /* ARViewContainer.swift in Sources */,
+				055DD25026361873002BAE84 /* POIController.swift in Sources */,
 				0555B7AE26349AFE00FA6DEC /* LocationManager.swift in Sources */,
 				0555B79D2634988D00FA6DEC /* ContentView.swift in Sources */,
 				0555B79B2634988D00FA6DEC /* AppDelegate.swift in Sources */,
+				055DD25326365959002BAE84 /* Place.swift in Sources */,
 				0555B7B82634B1E000FA6DEC /* SearchButtonBar.swift in Sources */,
 				0555B79F2634988D00FA6DEC /* Experience.rcproject in Sources */,
 			);
